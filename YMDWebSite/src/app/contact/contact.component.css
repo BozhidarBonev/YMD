@@ -27,6 +27,7 @@ p{
     margin-left:10%;
     margin-right:10%;
     font-size:1.2vw;
+    margin-bottom:2%;
 }
 .contact{
     background-color: #ECE9E6;
@@ -35,8 +36,8 @@ p{
     text-decoration: none;
     font-size: 1.3vw;
     border-radius: 8px;
-    padding:14px 30px;
+    padding:10px 30px;
     box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    
-
+    margin:auto;
+    display: block;
 }
