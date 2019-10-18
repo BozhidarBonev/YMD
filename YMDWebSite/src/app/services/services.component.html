@@ -1,1 +1,88 @@
-<p>services works!</p>
+<mat-grid-list cols="3">
+    <mat-grid-tile>
+      <mat-card (click)="toggleCollapse()">
+        <mat-card-header>
+          <div><mat-card-title >Web Desing&Development</mat-card-title></div>
+        </mat-card-header>
+        <mat-card-content>
+              <div><img mat-card-avatar src="assets/weblogo.jpg"></div>
+            <p>A website is now necessary for any kind of business in
+               the digital market, be it small or big.</p>
+               <div *ngIf="!isCollapsed"><p>Web Design and Development services by YMD Solutions:</p>
+                  <ul>
+                    <li>Website design and development</li>
+                    <li>Static website design</li>
+                    <li>Dynamic website design</li>
+                    <li>Responsive website design</li>
+                    <li>Ecommerce web solutions</li>
+                </ul>
+                <img mat-card-image src="assets/webservices.jpg">
+                  <p>We provide web development services across 
+                    multiple platforms integrating complex features and functionality into 
+                    your websites. </p></div>
+        </mat-card-content>
+        
+      </mat-card>
+    </mat-grid-tile>
+
+    <mat-grid-tile>
+        <mat-card (click)="toggleCollapse2()">
+          <mat-card-header>
+            <div><mat-card-title >Mobile Application Development</mat-card-title></div>
+          </mat-card-header>
+          <mat-card-content>
+                <div><img mat-card-avatar src="assets/aplicationlogo.jpg"></div>
+              <p>Each one of us knows how huge the demand for a mobile app grows day by day.</p>
+              <div *ngIf="!isCollapsed2"><p>Web Design and Development services by YMD Solutions:</p>
+                <ul>
+                  <li>Website design and development</li>
+                  <li>Static website design</li>
+                  <li>Dynamic website design</li>
+                  <li>Responsive website design</li>
+                  <li>Ecommerce web solutions</li>
+              </ul>
+              <img mat-card-image src="assets/webservices.jpg">
+                <p>We provide web development services across 
+                  multiple platforms integrating complex features and functionality into 
+                  your websites. </p></div>
+          </mat-card-content>
+        
+        </mat-card>
+      </mat-grid-tile>
+
+      
+
+      <mat-grid-tile>
+          <mat-card (click)="toggleCollapse1()">
+            <mat-card-header>
+              <div><mat-card-title >Pentesting</mat-card-title></div>
+            </mat-card-header>
+            <mat-card-content>
+                  <div><img mat-card-avatar src="assets/pentestinglogo.jpg"></div>
+                <p>Each one of us knows how huge the demand for a mobile app grows day by day.</p>
+                <div *ngIf="!isCollapsed1"><p>Web Design and Development services by YMD Solutions:</p>
+                  <ul>
+                    <li>Website design and development</li>
+                    <li>Static website design</li>
+                    <li>Dynamic website design</li>
+                    <li>Responsive website design</li>
+                    <li>Ecommerce web solutions</li>
+                </ul>
+                <img mat-card-image src="assets/webservices.jpg">
+                  <p>We provide web development services across 
+                    multiple platforms integrating complex features and functionality into 
+                    your websites. </p></div>
+            </mat-card-content>
+            
+          </mat-card>
+        </mat-grid-tile>
+
+        
+
+    
+
+
+
+
+    
+  </mat-grid-list>
