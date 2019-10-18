@@ -11,6 +11,7 @@ import { ServicesComponent } from './services/services.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { ContactComponent } from './contact/contact.component';
 
+
 import{MatCardModule} from '@angular/material';
 
 @NgModule({
@@ -28,7 +29,8 @@ import{MatCardModule} from '@angular/material';
     MatToolbarModule,
     BrowserModule,
     AppRoutingModule,
-    MatCardModule
+    MatCardModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
