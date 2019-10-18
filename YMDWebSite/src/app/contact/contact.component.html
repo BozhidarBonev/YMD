@@ -1,6 +1,33 @@
 <div class = "container">
     <h1>Contact Us</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-    </p>
-    <button class="contact">Contact</button>
+          <mat-horizontal-stepper [linear]="isLinear" #stepper>
+            <mat-step [stepControl]="firstFormGroup">
+              <form [formGroup]="firstFormGroup">
+                <ng-template matStepLabel><h3>E-mail: </h3></ng-template>
+                  <input matInput placeholder="E-mail" formControlName="firstCtrl" required>
+                <div>
+                  <button class = "butt" mat-button matStepperNext>Next</button>
+                </div>
+              </form>
+            </mat-step>
+            <mat-step [stepControl]="secondFormGroup">
+              <form [formGroup]="secondFormGroup">
+                <ng-template matStepLabel><h3>Name: </h3></ng-template>
+                  <input matInput placeholder="Name" formControlName="secondCtrl" required>
+                <div>
+                  <button class = "butt" mat-button matStepperPrevious>Back</button>
+                  <button class = "butt" mat-button matStepperNext>Next</button>
+                </div>
+              </form>
+            </mat-step>
+            <mat-step>
+              <ng-template matStepLabel><h3>Description</h3></ng-template> 
+                <textarea matInput id= "Text" rows="4" cols="50" placeholder="Description" formControlName="secondCtrl" required></textarea>
+              <div>
+                <button class = "butt" mat-button matStepperPrevious>Back</button>
+                <span class= "spacer"></span>
+                <button class = "butt" mat-button (click)="stepper.reset()">Submit</button>
+              </div>
+            </mat-step>
+          </mat-horizontal-stepper>
 </div>
