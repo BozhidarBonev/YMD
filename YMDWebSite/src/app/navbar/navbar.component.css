@@ -3,12 +3,18 @@
     width:100%;
     border:10px;
     border-color: #0F2027;
-    background-color: #0F2027;
+    background-image: linear-gradient(to right, #1D4350 , #16222A);
+    border-style: solid;
+    border-right: none;
+    border-left: none;
+    border-top:none;
+    border-width: 1px;
+    box-shadow: #0F2027;
   }
   .content a,span{
     display: inline-block;
     margin: 0 10px;
-    color:#E9E4F0 ;
+    color:#ECE9E6;
     text-decoration: none;
   }
 .spacer{
@@ -17,7 +23,7 @@
 a {
   font-family: "Verdana",sans-serif;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 1.3vw;
 }
 
 .content{

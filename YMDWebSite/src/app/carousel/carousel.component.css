@@ -2,6 +2,7 @@
     width:100%; 
     padding-left: 0;
     padding-right: 0;
+    height:auto;
 }
 .carousel{
     width:100%;
@@ -11,4 +12,16 @@ video{
 }
 .carousel-caption{
     height: 60%;
+}
+h1{
+    font-family: "Verdana",sans-serif;
+    font-weight: bold;
+    font-size:2.5vw;
+    color:#ECE9E6;
+}
+h3{
+    font-family: "Verdana",sans-serif;
+    font-weight: bold;
+    font-size:1.6vw;
+    color:#ECE9E6;
 }

@@ -1,0 +1,17 @@
+.cd-section {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  
+  .cd-section--bg-fixed {
+    min-height: 100vh;
+    background-attachment: fixed;
+  }
+  
+  /* backgrounds */
+  .cd-section:nth-child(1) {
+    background-image: url("/assets/contactpictwo.jpg");
+
+  }
+  

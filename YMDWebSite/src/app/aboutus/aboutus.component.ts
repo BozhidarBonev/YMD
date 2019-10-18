@@ -12,8 +12,8 @@ export interface Tile {
 })
 export class AboutusComponent implements OnInit {
     tiles: Tile[] = [
-      {text: 'One', cols: 3, rows: 1, color: 'lightblue'},
-      {text: 'Two', cols: 3, rows: 1, color: 'lightgreen'},
+      {text: 'One', cols: 2, rows: 1, color: 'lightblue'},
+      {text: 'Two', cols: 2, rows: 1, color: 'lightgreen'},
     ];
   constructor() { }
 
