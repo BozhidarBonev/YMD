@@ -11,6 +11,8 @@ import { ServicesComponent } from './services/services.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { ContactComponent } from './contact/contact.component';
 
+import{MatCardModule} from '@angular/material';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,13 +20,15 @@ import { ContactComponent } from './contact/contact.component';
     CarouselComponent,
     ServicesComponent,
     AboutusComponent,
-    ContactComponent
+    ContactComponent,
+    
   ],
   imports: [
     MatGridListModule,
     MatToolbarModule,
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
