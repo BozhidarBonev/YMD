@@ -1,9 +1,7 @@
 .container{
+  margin-top:0.5%;
   height:90px;
     width:100%;
-    border:10px;
-    border-color: #0F2027;
-    /*background-image: linear-gradient(to right, #1D4350 , #16222A);*/
     background-color: transparent;
 
     box-shadow: #0F2027;
@@ -30,4 +28,7 @@ a {
 img{
   width: 20%;
   height: auto;
+}
+html {
+  scroll-behavior: smooth;
 }
