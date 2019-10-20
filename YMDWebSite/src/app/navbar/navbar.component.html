@@ -1,10 +1,10 @@
 <mat-toolbar class = "container">
     <mat-toolbar-row class = "content">
-      <img src = "./assets/loogo.png">
+        <a [routerLink]="['aboutus']" [fragment]="'top'" class = "logoimg"><img  src = "./assets/loogo.png"></a> 
+      
       <span class = "spacer"></span>
-      <a routerLink="/services" routerLinkActive="active" href="#">Services</a>
-      <a routerLink="/aboutus" routerLinkActive="active" href="#">About Us</a> 
-      <a routerLink="/contact" routerLinkActive="active" href="#">Contact</a>
+      <a [routerLink]="['aboutus']" [fragment]="'aboutuspanel'" class = "navtext">About Us</a> 
+      <a  [routerLink]="['services']" [fragment]="'servicespanel'" class = "navtext">Services</a>
+      <a [routerLink]="['contact']" [fragment]="'contactpanel'" class = "navtext">Contact</a>
     </mat-toolbar-row>
 </mat-toolbar>
-

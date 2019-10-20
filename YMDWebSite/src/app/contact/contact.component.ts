@@ -9,6 +9,9 @@ export class ContactComponent implements OnInit {
   isLinear = false;
   firstFormGroup: FormGroup;
   secondFormGroup: FormGroup;
+  sender="";
+  name="";
+  message = "";
   constructor(private _formBuilder: FormBuilder) { }
 
   ngOnInit() {
@@ -19,6 +22,16 @@ export class ContactComponent implements OnInit {
       secondCtrl: ['', Validators.required]
     });
   }
-  
-
+  SetSender(email:string){
+    this.sender = email;
+  }
+  SetName(name:string){
+    this.sender = name;
+  }
+  SetMessage(message:string){
+    this.sender = message;
+  }
+  Send(){
+    
+  }
 }

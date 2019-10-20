@@ -4,7 +4,7 @@
             <mat-step [stepControl]="firstFormGroup">
               <form [formGroup]="firstFormGroup">
                 <ng-template matStepLabel><h3>E-mail: </h3></ng-template>
-                  <input matInput placeholder="E-mail" formControlName="firstCtrl" required>
+                  <input matInput [(ngModel)]="SetSender(input.value)" placeholder="E-mail" formControlName="firstCtrl" required>
                 <div>
                   <button class = "butt" mat-button matStepperNext>Next</button>
                 </div>
@@ -13,7 +13,7 @@
             <mat-step [stepControl]="secondFormGroup">
               <form [formGroup]="secondFormGroup">
                 <ng-template matStepLabel><h3>Name: </h3></ng-template>
-                  <input matInput placeholder="Name" formControlName="secondCtrl" required>
+                  <input matInput [(ngModel)]="SetName(input.value)" placeholder="Name" formControlName="secondCtrl" required>
                 <div>
                   <button class = "butt" mat-button matStepperPrevious>Back</button>
                   <button class = "butt" mat-button matStepperNext>Next</button>
@@ -22,11 +22,11 @@
             </mat-step>
             <mat-step>
               <ng-template matStepLabel><h3>Description</h3></ng-template> 
-                <textarea matInput id= "Text" rows="4" cols="50" placeholder="Description" formControlName="secondCtrl" required></textarea>
+                <textarea matInput [(ngModel)]="SetMessage(input.value)" id= "Text" rows="4" cols="50" placeholder="Description" formControlName="secondCtrl" required></textarea>
               <div>
                 <button class = "butt" mat-button matStepperPrevious>Back</button>
                 <span class= "spacer"></span>
-                <button class = "butt" mat-button (click)="stepper.reset()">Send</button>
+                <button class = "butt" mat-button (click)="stepper.reset();send()">Send</button>
               </div>
             </mat-step>
           </mat-horizontal-stepper>
