@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import {FormBuilder, FormGroup, Validators, FormControl} from '@angular/forms';
+import {ContactserviceService} from '../contactservice.service'
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
@@ -13,8 +14,12 @@ export class ContactComponent implements OnInit {
   sender="";
   name="";
   message = "";
-  
-  constructor(private _formBuilder: FormBuilder) { }
+   mail = {
+    mailname: "",
+    mailemail:  "",
+    mailmessage:  ""
+  }
+  constructor(private _formBuilder: FormBuilder,private mailservice:ContactserviceService) { }
 
   ngOnInit() {
     
@@ -37,17 +42,23 @@ export class ContactComponent implements OnInit {
   SetMessage(){
     this.message =  this.thirdFormGroup.get('thirdCtrl').value;
   }
-  Send(){//TO DO
-    this.SetSender();
-    this.SetName();
-    this.SetMessage();
-    if(this.sender!="" && this.name!=""&& this.message!=""){
-      console.log( "Email: "+this.sender+" Name: "+this.name+" Message: " + this.message);
-      this.thirdFormGroup.reset();
-    }
-    else{
-      console.log("KUR");
-    }
+  show(){
+    console.log(this.sender);
+  }
+  Mail(){
+    console.log(this.name);
+    this.mail.mailemail = this.sender;
+    this.mail.mailname = this.name;
+    this.mail.mailmessage = this.message;
     
+    console.log(this.name);
+    this.mailservice.sendMail("http://localhost:3000/sendMail",this.mail).subscribe(
+      data=>{
+        let res:any = data;
+        console.log(
+          this.mail.mailname+'s mail has been sent'
+        )
+      }
+    );
   }
 }

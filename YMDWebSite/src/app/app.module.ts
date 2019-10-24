@@ -14,7 +14,8 @@ import { ContactComponent } from './contact/contact.component';
 import{MatCardModule} from '@angular/material';
 import { ReactiveFormsModule } from '@angular/forms';
 import{BrowserAnimationsModule} from '@angular/platform-browser/animations';
-
+import { HttpClientModule }    from '@angular/common/http';
+import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,6 +27,8 @@ import{BrowserAnimationsModule} from '@angular/platform-browser/animations';
     
   ],
   imports: [
+    AnimateOnScrollModule.forRoot(),
+    HttpClientModule,
     BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,

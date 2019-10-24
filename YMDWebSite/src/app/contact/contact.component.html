@@ -1,19 +1,21 @@
-<div class = "container" id="contactpanel">
+
+<div class = "container" id="contactpanel" animateOnScroll animationName="animated slideInLeft">
     <h1>Contact Us</h1>
+    <p id = "message"></p>
           <mat-horizontal-stepper [linear]="isLinear" #stepper>
             <mat-step [stepControl]="firstFormGroup">
-              <form [formGroup]="firstFormGroup">
+              <form  [formGroup]="firstFormGroup">
                 <ng-template matStepLabel><h3>E-mail: </h3></ng-template>
-                  <input matInput  type = "text" placeholder="E-mail" formControlName="firstCtrl" required>
+                  <input matInput    type = "text" placeholder="E-mail" formControlName="firstCtrl"  required>
                 <div>
                   <button class = "butt" mat-button matStepperNext>Next</button>
                 </div>
               </form>
             </mat-step>
             <mat-step [stepControl]="secondFormGroup">
-              <form [formGroup]="secondFormGroup">
+              <form  [formGroup]="secondFormGroup">
                 <ng-template matStepLabel><h3>Name: </h3></ng-template>
-                  <input matInput type = "text" placeholder="Name" formControlName="secondCtrl" required>
+                  <input matInput   type = "text" placeholder="Name" formControlName="secondCtrl" required>
                 <div>
                   <button class = "butt" mat-button matStepperPrevious>Back</button>
                   <button class = "butt" mat-button matStepperNext>Next</button>
@@ -21,15 +23,51 @@
               </form>
             </mat-step>
             <mat-step>
-                <form [formGroup]="thirdFormGroup">
+                <form  [formGroup]="thirdFormGroup">
               <ng-template matStepLabel><h3>Description</h3></ng-template> 
-                <textarea matInput type = "text" id= "Text" rows="4" cols="50" placeholder="Description" formControlName="thirdCtrl" required></textarea>
-              </form>
+                <textarea matInput  type = "text" id= "Text" rows="4" cols="50" placeholder="Description"  formControlName="thirdCtrl"  required></textarea>
+                </form>
               <div>
                 <button class = "butt" mat-button matStepperPrevious>Back</button>
                 <span class= "spacer"></span>
-                <button class = "butt" mat-button (click)="Send();stepper.reset()">Send</button>
+                <button class = "butt" mat-button type="submit" (click)="SetSender();SetName();SetMessage();Mail();stepper.reset()">Send</button>
               </div>
+            
             </mat-step>
           </mat-horizontal-stepper>
 </div>
+
+<script>
+  $(document).ready(function(event){
+    $('contactForm').submit(function(event){
+      event.preventDefault();
+    var status = document.getElementById("message")
+    var mail = $('#mail').val();
+    var name = $('#name').val();
+    var desc = $('#desc').val();
+ 
+    if(mail && name && desc){
+      $.ajax({
+        type: 'post',
+        url: '../mailsender.php',
+        data : {
+          name:name,
+          email:mail,
+          desc: desc
+        },
+        success:function(response){
+          var result = $.trim(response);
+          if(result == "success"){
+            status.innerHTML = 'Qsha ve tigur'
+          }
+        }
+      });
+      return false;
+    }
+    else{
+      status.innerHTML = 'kur'
+      return false;
+    }
+  })
+})
+</script>
