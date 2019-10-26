@@ -10,6 +10,7 @@ export class ServicesComponent implements OnInit {
   isCollapsed:boolean=true;
   isCollapsed1:boolean=true;
   isCollapsed2:boolean=true;
+  
   toggleCollapse(){
     this.isCollapsed=!this.isCollapsed;
   }
