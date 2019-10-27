@@ -1,4 +1,4 @@
-/* You can add global styles to this file, and also import other style files */
+
 @import '@angular/material/prebuilt-themes/pink-bluegrey.css';
 /*body{
     background-image:url(http://www.apicius.es/wp-content/uploads/2012/07/IMG-20120714-009211.jpg);
@@ -7,4 +7,10 @@
     background-size: 100% 100%;
     background-position: top center;
 }*/
+.animated {
+    visibility: visible !important;
+}
+.hide-on-init {
+    visibility: hidden;
+}
   
