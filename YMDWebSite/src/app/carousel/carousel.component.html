@@ -10,8 +10,8 @@
         </div>
         <div class="item active">
           
-                <video class="video-fluid" *ngIf="true" oncanplay="this.play()" [autoplay]="true" [loop]="true" onloadedmetadata="this.muted=true">
-                        <source src="./assets/First.mp4" type="video/mp4" />
+                <video onloadedmetadata="this.Play()" class="video-fluid" height="600" autoplay loop muted>
+                        <source src="./assets/original/First.mp4" type="video/mp4" />
                       </video>
           <div class="carousel-caption">
             <h1>Software Solutions</h1>
@@ -20,8 +20,8 @@
         </div>
   
         <div class="item">
-                <video *ngIf="true" oncanplay="this.play()" [autoplay]="true" [loop]="true" onloadedmetadata="this.muted=true">
-                        <source src="./assets/Second.mp4" type="video/mp4" />
+                <video onloadedmetadata="this.Play()" autoplay loop muted>
+                        <source src="./assets/original/Second.mp4" type="video/mp4" />
                       </video>
           <div class="carousel-caption">
             <h1>Fast & Smart</h1>
@@ -30,8 +30,8 @@
         </div>
       
         <div class="item">
-                <video class="video-fluid" oncanplay="this.play()" *ngIf="true" [autoplay]="true" [loop]="true" onloadedmetadata="this.muted=true">
-                        <source src="./assets/Third.mp4" type="video/mp4" />
+                <video onloadedmetadata="this.Play()" class="video-fluid" autoplay loop muted>
+                        <source src="./assets/original/Third.mp4" type="video/mp4" />
                       </video>
           <div class="carousel-caption">
             <h1>Young & Fast-Paced</h1>

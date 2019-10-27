@@ -4,7 +4,6 @@ import { FormsModule } from '@angular/forms';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatStepperModule} from '@angular/material/stepper';
 import {MatToolbarModule} from '@angular/material/toolbar';
-import {MatExpansionModule} from '@angular/material/expansion';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -36,7 +35,6 @@ import { AnimateOnScrollModule } from 'ng2-animate-on-scroll';
     MatStepperModule,
     MatGridListModule,
     MatToolbarModule,
-    MatExpansionModule,
     BrowserModule,
     AppRoutingModule,
     MatCardModule

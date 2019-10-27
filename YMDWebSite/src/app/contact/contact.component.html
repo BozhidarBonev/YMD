@@ -1,37 +1,3 @@
-<script>
-  $(document).ready(function(event){
-    $('contactForm').submit(function(event){
-      event.preventDefault();
-    var status = document.getElementById("message")
-    var mail = $('#mail').val();
-    var name = $('#name').val();
-    var desc = $('#desc').val();
- 
-    if(mail && name && desc){
-      $.ajax({
-        type: 'post',
-        url: '../mailsender.php',
-        data : {
-          name:name,
-          email:mail,
-          desc: desc
-        },
-        success:function(response){
-          var result = $.trim(response);
-          if(result == "success"){
-            status.innerHTML = 'Qsha ve tigur'
-          }
-        }
-      });
-      return false;
-    }
-    else{
-      status.innerHTML = 'kur'
-      return false;
-    }
-  })
-})
-</script>
 
 <div class = "container" id="contactpanel" animateOnScroll animationName="animated slideInLeft">
     <h1>Contact Us</h1>
@@ -71,3 +37,37 @@
           </mat-horizontal-stepper>
 </div>
 
+<script>
+  $(document).ready(function(event){
+    $('contactForm').submit(function(event){
+      event.preventDefault();
+    var status = document.getElementById("message")
+    var mail = $('#mail').val();
+    var name = $('#name').val();
+    var desc = $('#desc').val();
+ 
+    if(mail && name && desc){
+      $.ajax({
+        type: 'post',
+        url: '../mailsender.php',
+        data : {
+          name:name,
+          email:mail,
+          desc: desc
+        },
+        success:function(response){
+          var result = $.trim(response);
+          if(result == "success"){
+            status.innerHTML = 'Qsha ve tigur'
+          }
+        }
+      });
+      return false;
+    }
+    else{
+      status.innerHTML = 'kur'
+      return false;
+    }
+  })
+})
+</script>
