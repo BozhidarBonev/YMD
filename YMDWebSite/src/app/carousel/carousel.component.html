@@ -1,19 +1,17 @@
-<div class="container">
+<div class="container" id="con">
     
     <div id="myCarousel" class="carousel" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol>
+
   
       
       <div class="carousel-inner">
-        
+        <div class="navbar" id="nav">
+          <app-navbar></app-navbar>
+        </div>
         <div class="item active">
           
-                <video class="video-fluid" autoplay loop muted>
-                        <source src="./assets/one.mp4" type="video/mp4" />
+                <video onloadedmetadata="this.Play()" class="video-fluid" height="600" autoplay loop muted>
+                        <source src="./assets/original/First.mp4" type="video/mp4" />
                       </video>
           <div class="carousel-caption">
             <h1>Software Solutions</h1>
@@ -22,8 +20,8 @@
         </div>
   
         <div class="item">
-                <video  autoplay loop muted>
-                        <source src="./assets/two.mp4" type="video/mp4" />
+                <video onloadedmetadata="this.Play()" autoplay loop muted>
+                        <source src="./assets/original/Second.mp4" type="video/mp4" />
                       </video>
           <div class="carousel-caption">
             <h1>Fast & Smart</h1>
@@ -32,8 +30,8 @@
         </div>
       
         <div class="item">
-                <video class="video-fluid" autoplay loop muted>
-                        <source src="./assets/three.mp4" type="video/mp4" />
+                <video onloadedmetadata="this.Play()" class="video-fluid" autoplay loop muted>
+                        <source src="./assets/original/Third.mp4" type="video/mp4" />
                       </video>
           <div class="carousel-caption">
             <h1>Young & Fast-Paced</h1>

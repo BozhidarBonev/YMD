@@ -19,5 +19,6 @@ export class AboutusComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  PicAnim(text:string){
+  }
 }

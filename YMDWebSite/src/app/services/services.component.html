@@ -1,31 +1,40 @@
+<<<<<<< HEAD
 <mat-grid-list cols="3">
     
+=======
+<mat-grid-list cols="3" id="servicespanel">
+  <div class="header-grid">
+      <h2>Explore <span class="special">Our Services</span></h2>
+  </div>
+>>>>>>> 3664e3b263deb2606970a90694ac9572fee57723
     <mat-grid-tile>
-      <mat-card (click)="toggleCollapse()">
-        <mat-card-header>
-          <div><mat-card-title >Web Desing&Development</mat-card-title></div>
-        </mat-card-header>
-        <mat-card-content>
-              <div><img mat-card-avatar src="assets/weblogo.jpg"></div>
-            <p>Modern, dynamic, responsive. That is how we do it.</p>
-               <div *ngIf="!isCollapsed"><p>Web Design and Development services by YMD Solutions:</p>
-                  <ul>
-                    <li>Website design and development</li>
-                    <li>Static website design</li>
-                    <li>Dynamic website design</li>
-                    <li>Responsive website design</li>
-                    <li>Ecommerce web solutions</li>
-                </ul>
-                <img mat-card-image src="assets/webservices.jpg">
-                  <p>We provide web development services across 
-                    multiple platforms integrating complex features and functionality into 
-                    your websites. </p></div>
-        </mat-card-content>
-        
+      <mat-card>    
+          <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="assets/web-development_website.png" style="width:350px;height:230px;">
+                  <mat-card-header>
+                    <h3>Web Development</h3>
+                  </mat-card-header>
+                </div>
+                <div class="flip-card-back">
+                  <h3>Web Development</h3>
+                  <div class="content-container">
+                      <p>We create custom web software 
+                          solutions for various 
+                          means incorporating your
+                           business needs as customer
+                            and our technical expertise.</p>
+                  </div>
+                  <button type="button" class="btn btn-outline-dark">LEARN MORE</button> 
+                </div>
+              </div>
+            </div>
       </mat-card>
     </mat-grid-tile>
 
     <mat-grid-tile>
+<<<<<<< HEAD
         <mat-card (click)="toggleCollapse2()">
           <mat-card-header>
             <div><mat-card-title >Mobile Application Development</mat-card-title></div>
@@ -79,3 +88,42 @@
 
 </mat-grid-list>
 
+=======
+      <mat-card>    
+          <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="assets/application_photo.jpg" style="width:350px;height:230px">
+                  <mat-card-header>
+                    <h3>Custom Mobile Applications</h3>
+                  </mat-card-header>
+                </div>
+                <div class="flip-card-back">
+                  <h3>Custom Mobile Applications</h3>
+                  <button type="button" class="btn btn-outline-dark">LEARN MORE</button>
+                  </div>
+              </div>
+            </div>
+      </mat-card>
+    </mat-grid-tile>
+
+    <mat-grid-tile>
+      <mat-card>    
+          <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="assets/pentesting_photo.jpg" style="width:350px;height:230px;">
+                  <mat-card-header>
+                    <h3>Pentesting</h3>
+                  </mat-card-header>
+                </div>
+                <div class="flip-card-back">
+                  <h3>Pentesting</h3>
+                  <button type="button" class="btn btn-outline-dark">LEARN MORE</button>
+                  </div>
+              </div>
+            </div>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+>>>>>>> 3664e3b263deb2606970a90694ac9572fee57723
