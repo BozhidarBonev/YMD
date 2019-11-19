@@ -9,6 +9,12 @@
 }
 video{
     width:100%;
+    border-style: solid;
+    border-color:#ECE9E6 ;
+    border-left:none;
+    border-right:none;
+    border-width: 1px;
+    
 }
 .carousel-caption{
     height: 60%;

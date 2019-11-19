@@ -3,18 +3,15 @@
     width:100%;
     border:10px;
     border-color: #0F2027;
-    background-image: linear-gradient(to right, #1D4350 , #16222A);
-    border-style: solid;
-    border-right: none;
-    border-left: none;
-    border-top:none;
-    border-width: 1px;
+    /*background-image: linear-gradient(to right, #1D4350 , #16222A);*/
+    background-color: transparent;
+
     box-shadow: #0F2027;
   }
   .content a,span{
     display: inline-block;
     margin: 0 10px;
-    color:#ECE9E6;
+    color:white;
     text-decoration: none;
   }
 .spacer{
