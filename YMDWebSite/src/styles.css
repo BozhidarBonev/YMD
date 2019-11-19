@@ -13,4 +13,6 @@
 .hide-on-init {
     visibility: hidden;
 }
-  
+html {
+    scroll-behavior: smooth;
+  }

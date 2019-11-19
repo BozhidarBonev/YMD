@@ -11,6 +11,7 @@ export class AppComponent implements OnInit{
   ngOnInit(): void {
     this.viewportScroller.scrollToPosition([0,0]);;
   }
+  
   title = 'YMDWebSite';
   scrollToElement(element): void {
     element.scrollIntoView({behavior: "smooth", inline: "nearest"});

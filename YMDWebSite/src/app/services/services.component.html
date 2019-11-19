@@ -1,27 +1,37 @@
-<mat-grid-list cols="3" id="servicespanel">
+<mat-grid-list cols="3" id="servicespanel" >
   <div class="header-grid">
-      <h2>Explore <span class="special">Our Services</span></h2>
+      <h2><span class="special">Our Services</span></h2>
   </div>
+  <div animateOnScroll animationName="animated fadeInRight" class="hide-on-init animated-delay-1" >
     <mat-grid-tile>
       <mat-card>    
-          <div class="flip-card">
+          <div class="flip-card" >
               <div class="flip-card-inner">
                 <div class="flip-card-front">
-                  <img src="assets/web-development_website.png" style="width:350px;height:230px;">
-                  <mat-card-header>
-                    <h3>Web Development</h3>
-                  </mat-card-header>
+                        <h3>Web Development</h3>
+
+                  <img src="assets/desktop.png">
                 </div>
                 <div class="flip-card-back">
                   <h3>Web Development</h3>
                   <div class="content-container">
-                      <p>We create custom web software 
-                          solutions for various 
-                          means incorporating your
-                           business needs as customer
-                            and our technical expertise.</p>
+                      <p>
+                        The Website makes the first impression and that is why we take the extra care.
+                        Here are a couple of examples of our work:
+                      </p>
+                      <br>
+                      <ul>
+                          <li>
+                              <a href="http://i383944.hera.fhict.nl/">One-Page Dynamic Website</a>
+                            </li>
+                            <li>
+                                <a>Website</a>
+                              </li>
+                              <li>
+                                  <a>Web Portfolio & Web Galleries</a>
+                                </li>
+                        </ul>
                   </div>
-                  <button type="button" class="btn btn-outline-dark">LEARN MORE</button> 
                 </div>
               </div>
             </div>
@@ -33,14 +43,22 @@
           <div class="flip-card">
               <div class="flip-card-inner">
                 <div class="flip-card-front">
-                  <img src="assets/application_photo.jpg" style="width:350px;height:230px">
-                  <mat-card-header>
-                    <h3>Custom Mobile Applications</h3>
-                  </mat-card-header>
+                        <h3>Mobile Applications</h3>
+                  <img src="assets/mobile.png">
                 </div>
                 <div class="flip-card-back">
-                  <h3>Custom Mobile Applications</h3>
-                  <button type="button" class="btn btn-outline-dark">LEARN MORE</button>
+                  <h3>Mobile Applications</h3>             
+                  <p>There is now more traffic from mobile devices on the Internet than desktop. Show yourself to the world with our custom made apps
+                    that suit your purpose. Moreover we offer indie game development too!
+                  </p>
+                  <ul>
+                      <li>
+                        <a >Android Dating App</a>
+                      </li>
+                      <li>
+                          <a >Android Indie Game</a>
+                        </li>
+                    </ul>
                   </div>
               </div>
             </div>
@@ -52,17 +70,30 @@
           <div class="flip-card">
               <div class="flip-card-inner">
                 <div class="flip-card-front">
-                  <img src="assets/pentesting_photo.jpg" style="width:350px;height:230px;">
-                  <mat-card-header>
-                    <h3>Pentesting</h3>
-                  </mat-card-header>
+                        <h3>Pentesting</h3>
+                  <img src="assets/cyber.png">
                 </div>
                 <div class="flip-card-back">
-                  <h3>Pentesting</h3>
-                  <button type="button" class="btn btn-outline-dark">LEARN MORE</button>
+                  <h3>Pentesting</h3>                 
+                  <p>Why should I think about cyber security?</p>
+                  <ul>
+                      <li>
+                        There is a hacker attack every 39seconds.
+                      </li>
+                      <li>
+                          43% of cyber attacks target small businesses.
+                        </li>
+                        <li>
+                            The average cost of a data breach in 2020 will exceed $150million.
+                          </li>
+                    </ul>
+                    <p>What we do to prevent you from being attacked is actually see
+                      what holes are there in your software so they can be repaired or sealed. Of course everything is sealed between disclosure agreements.
+                    </p>
                   </div>
               </div>
             </div>
       </mat-card>
     </mat-grid-tile>
+  </div>
   </mat-grid-list>

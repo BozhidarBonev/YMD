@@ -17,3 +17,7 @@
 section {
     scroll-behavior: smooth;
   }
+  @viewport {
+    width: device-width ;
+    zoom: 13.0 ;
+  }
